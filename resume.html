@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <title>Rosie</title>
+  </head>
+  <body>
+    <header>
+      <div class="row no-gutters">
+        <!-- by default there are spaces/margins on the grid from boots trap. Like gutter=space.  -->
+        <a href="index.html" class="col-md-4 logo"></a>
+        <div class="col-md-8">
+          <div class="row no-gutters bg-color-name-title">
+            <div class="col heading">
+              <!-- col is bootstrap. heading is my onw style -->
+              <h1 class="name">Rosie Odenkirk</h1>
+              <h2 class="title">Full Stack Developer</h2>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col">
+              <ul id="nav" class="list-inline menucontainer">
+                <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                  <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                </li>
+                <li
+                  class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
+                  <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                </li>
+                <li
+                  class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
+                  <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                </li>
+                <li
+                  class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
+                  <a href="assets/cv/sample-cv.pdf" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+        <section class="container-fluid">
+        <div class="row"> <!-- I removed row-table from here for positioning purposes -->
+            <div class="col-md-4 bg-color-work-history section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="history-heading uppercase">Work History</h3>
+                    </div>
+                </div>
+                <div class="history-items">
+                    <div class="timeline-item" data-dates="02/1998 - 04/2004"> <!-- the data-dates attribute is custom. I just made it up -->
+                        <h4>National College of Art and Design (NCAD)</h4>
+                        <p>Sculptor in residence</p>
+                    </div>
+                    <div class="timeline-item" data-dates="04/2004 - 04/2008"> <!-- the data-dates attribute is custom. I just made it up -->
+                        <h4>Fisher and Diaz Funeral Directors</h4>
+                        <p>Junior Embalmer</p>
+                    </div>
+                    <div class="timeline-item" data-dates="06/2008 - 06/2011"> <!-- the data-dates attribute is custom. I just made it up -->
+                        <h4>Phantom Design Inc. Dublin</h4>
+                        <p>Junior Front End Developer</p>
+                    </div>
+                    <div class="timeline-item" data-dates="06/2011 - Present"> <!-- the data-dates attribute is custom. I just made it up -->
+                        <h4>Hooli Inc. Silicon Valley</h4>
+                        <p>Full Stack Web Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 bgcolor-three-reasons "> <!-- I removed section-column from here for positioning purposes this went along with the row-table class from line above -->
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">My Skills</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Front End</h4>
+                                <p>I'm skilled in User Experience Design using the trinity of HTML/CSS/Javascript. 
+                                I also have extensive experience in Front End Frameworks such as Angular and React</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-gears" aria-hidden="true"></i>
+                            </div>
+                        
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Back End</h4>
+                                <p>I specialize in data-driven web applications. Many of my projects utilise
+                                document-base data. I use Python and Django in conjunction with MongoDB
+                                to process and present information</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row progress-section">
+                    <div class="col">
+                        <div class="progress"> <!-- progress is built in class from bootstrap -->
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" 
+                            aria-valuemax="100" style="width:90%;"> <!-- this is bootstrap built in functionality for progress bar -->
+                                <span class="sr-only">90% complete</span>
+                            </div>
+                            <span class="progress-type">HTML / HTML5</span>
+                        </div>
+                        <div class="progress"> <!-- progress is built in class from bootstrap -->
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" 
+                            aria-valuemax="100" style="width:80%;"> <!-- this is bootstrap built in functionality for progress bar. bg-success gives the green color of the bar -->
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">CSS / CSS3</span>
+                        </div>
+                        <div class="progress"> <!-- progress is built in class from bootstrap -->
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" 
+                            aria-valuemax="100" style="width:70%;"> <!-- this is bootstrap built in functionality for progress bar. bg-info gives the green color of the bar -->
+                                <span class="sr-only">70% complete</span>
+                            </div>
+                            <span class="progress-type">JavaScript / JQuery</span>
+                        </div>
+                        <div class="progress"> <!-- progress is built in class from bootstrap -->
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" 
+                            aria-valuemax="100" style="width:80%;"> <!-- this is bootstrap built in functionality for progress bar. bg-warning gives the  color of the bar -->
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">Django / Python</span>
+                        </div>
+                        <div class="progress"> <!-- progress is built in class from bootstrap -->
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" 
+                            aria-valuemax="100" style="width:80%;"> <!-- this is bootstrap built in functionality for progress bar. bg-danger gives the  color of the bar -->
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">SQL / NoSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">Full Stack Web Developer. Skilled in everything from HTML to Heroku. The capacity for structural and design thinking.</p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                Need a printable version of my CV? Download it here.
+                <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf"><i class="fa fa-download" aria-hidden="true"></i><span class="sr-only">Download Link</span></a></p> <!-- sr-only= screen reader only -->
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Social</h5>
+                <ul class="list-inline-item social-links"> <!-- bootstrap=lint-inline. Social-links is my own CSS -->
+                    <li class="list-inline-item">
+                    <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a><span class="sr-only">Facebook</span>
+                    </li>
+                    <li class="list-inline-item">
+                    <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><span class="sr-only">Twitter</span>
+                    </li>
+                    <li class="list-inline-item">
+                    <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><span class="sr-only">Linkedin</span>
+                    </li>
+                    <li class="list-inline-item">
+                    <a href="#" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a><span class="sr-only">Pinterest</span>
+                    </li>
+                    <li class="list-inline-item">
+                    <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a><span class="sr-only">Instagram</span>
+                    </li>
+                    <li class="list-inline-item">
+                    <a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a><span class="sr-only">Youtube</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
