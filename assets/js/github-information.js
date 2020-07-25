@@ -60,7 +60,10 @@ function fetchGitHubInformation(event) {
             $("#gh-repo-data").html(repoInformationHTML(repoData));
         }, function (errorResponse) {
             if (errorResponse.status === 404) {
-                $("#gh-user-data").html('<h2>No info found for the user ${username}</h2>')
+                $("#gh-user-data").html('<h2>No info found for the user ${username}</h2>');
+            } else if (errorResponse.status === 403) {//against frotting = too many calls in the api at given time. This else if wont prevent you from getting the error but it will show a nice message to let you know. 403 is forbidden error
+                var resetTime = new Date(errorResponse.getResponseHeader('X-RateLimit-Reset')*1000);//x-rate... is the name of the header that contain the information when wwe can use the functionality again. The data in this header is in a weird format, for this reason we multiply for 1000 and turn into a date format
+                $("#gh-user-data").html(`<h4>Toomany requests, please wait until ${resetTime.toLocaleTimeString()}</h4>`);
             } else {
                 console.log(errorResponse)
                 $("#gh-user-data").html("<h2>Error: ${errorResponse.responseJSON.message}</h2>")
