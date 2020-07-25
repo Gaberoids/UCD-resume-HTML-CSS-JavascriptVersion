@@ -35,6 +35,9 @@ function repoInformationHTML(repos) {//(repos) is actually somethig that github 
 
 function fetchGitHubInformation(event) {
 
+    $("#gh-user-data").html("");// clear the divs after rendering on the page
+    $("#gh-repo-data").html("");
+
     var username = $("#gh-username").val(); //val() is the value of the field selected.
     if (!username) {
         $("#gh-user-data").html(`<h2>Please enter a GitHub username</h2>`);
@@ -66,3 +69,5 @@ function fetchGitHubInformation(event) {
         }
     )
 }
+
+$(document).ready(fetchGitHubInformation);
